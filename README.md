@@ -1,10 +1,10 @@
 # requestIdleCallback
 想探索下requestIdleCallback的秘密，结果发现探索失败。   
-![pic1](https://aerotwist.com/static/blog/the-anatomy-of-a-frame/anatomy-of-a-frame.svg)
+![pic1](./images/anatomy-of-a-frame.jpg)
 这是网上的图片，图上展示requestIdleCallback是在frame的最后阶段执行的，而相对的requestAnimationFrame是在frame的开头执行的，之前研究过requestAnimationFrame，发现requestAnimationFrame的执行位置是固定的。   
 
 ## demo
-* [`demo1`](https://codepen.io/yoution/pen/paOQpd)
+* [`demo1`](https://codepen.io/yoution/pen/bLZvgx)   
 测试过程使用的是一个例子，在里面通过`console.time`进行打点进行测试的，打了`raf1---ric1`,`ric1`，`ric1---raf2`，`raf2---ric2`，`ric2`。在requestIdleCallback里设置样式强制layout，所以在图上可以看到直观的密集的竖状并排的类似二维码的图案。
 
 * timeline图
